@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE FETCH — archive</title>
+<meta name="description" content="Ink on black. An archive of drawings from The Fetch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- corner readout, camcorder-style -->
+  <div class="readout" aria-hidden="true">
+    <span class="rec-dot"></span>
+    <span class="rec-label">REC</span>
+    <span class="timecode" id="timecode">00:00:00:00</span>
+  </div>
+
+  <header class="site-nav">
+    <a href="#top" class="site-nav__mark">THE&nbsp;FETCH</a>
+    <nav class="site-nav__links">
+      <a href="#sights">Sights</a>
+      <a href="#sounds">Sounds</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero__scanlines" aria-hidden="true"></div>
+    <h1 class="hero__title">THE FETCH</h1>
+    <p class="hero__subtitle">an archive</p>
+  </section>
+
+  <main id="collections"></main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> The Fetch</span>
+    <span class="site-footer__divider">/</span>
+    <span>archive maintained by hand</span>
+  </footer>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="artworks.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
