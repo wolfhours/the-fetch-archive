@@ -25,6 +25,7 @@ const REELS = [
     label: "Sights",
     folder: "images/cosmology/",
     pieces: [
+      {title: "Now, look...", file: "now-look.jpg"},
       {title: "Ghosts IV", file: "ghosts-iv.jpg"},
       {title: "Ghosts II", file: "ghosts-II.jpg"},
       {title: "Bennings' Last Breath", file: "bennings-last-breath-2.jpg"},
